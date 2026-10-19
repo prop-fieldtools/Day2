@@ -14,24 +14,22 @@
   body{padding:4px 6px 6px;font-family:Inter,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
 
   .jump{
-    display:grid;grid-template-columns:repeat(5,1fr);gap:4px;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px;
     padding:10px;border:1px solid var(--purple);border-radius:14px;
     background:transparent;
   }
   .jump a{
-    padding:9px 10px;border-radius:9px;text-align:center;
-    color:var(--navy);font-size:15px;font-weight:700;text-decoration:none;white-space:nowrap;
+    flex-shrink:0;padding:8px 8px;border-radius:9px;text-align:center;
+    color:var(--navy);font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap;
     transition:background .15s ease,color .15s ease;
   }
   .jump a:hover{background:var(--mint)}
   .jump a:focus-visible{outline:3px solid var(--purple);outline-offset:1px}
-  @media (max-width:900px){.jump{grid-template-columns:repeat(3,1fr)}}
-  @media (max-width:600px){.jump{grid-template-columns:repeat(2,1fr)}.jump a{white-space:normal}}
+  @media (max-width:760px){.jump{justify-content:flex-start}}
 </style>
 </head>
 <body>
 <nav class="jump" aria-label="Day 2 sections">
-  <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#today-s-flight-plan-______________________________________________________________________" target="_top">Flight Plan</a>
   <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#shortening-your-sales-cycle-_____________________________________________________________" target="_top">Opportunity Grades</a>
   <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#easy-to-sell-solutions-__________________________________________________________________" target="_top">Solutions</a>
   <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#reseller-partnerships-___________________________________________________________________" target="_top">Reseller Partnerships</a>
@@ -39,8 +37,6 @@
   <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#pricing-models-_________________________________________________________________________" target="_top">Pricing Models</a>
   <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#fee-reduction-programs-________________________________________________________________" target="_top">Fee Reduction</a>
   <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#evolution-of-fee-reduction-_____________________________________________________________" target="_top">Evolution of Fee Reduction</a>
-  <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#closing-_________________________________________________________________________________" target="_top">Closing</a>
-  <a href="https://propelrpay1.sharepoint.com/sites/Training/SitePages/Day-2.aspx#before-next-session-____________________________________________________________________" target="_top">Homework</a>
 </nav>
 
 <script>
