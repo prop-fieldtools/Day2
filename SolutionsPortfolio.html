@@ -27,6 +27,13 @@ body{background:transparent;font-family:'Inter',sans-serif;color:#1a1a2e;padding
 .tab.active .ttitle{color:#ffffff}
 .tab.active .tsub{color:rgba(255,255,255,.8)}
 .tab:not(.active):hover{background:#f3f6ff}
+.tab.gold{background:#fff8e6}
+.tab.gold .ttitle{color:#9C6B00}
+.tab.gold .tsub{color:#B8860B}
+.tab.gold:not(.active):hover{background:#fdf0cc}
+.tab.gold.active{background:#B8860B}
+.tab.gold.active .ttitle{color:#ffffff}
+.tab.gold.active .tsub{color:rgba(255,255,255,.85)}
 .tab:focus-visible{outline:2px solid #1B2F5B;outline-offset:-2px}
 .tabrule{border:none;border-top:1px solid #d8dce8}
 
@@ -140,10 +147,10 @@ body{background:transparent;font-family:'Inter',sans-serif;color:#1a1a2e;padding
 <div class="outer">
 
   <div class="tabbar" role="tablist">
-    <button class="tab active" type="button" role="tab" data-tab="dejavoo"><span class="ttitle">Dejavoo</span><span class="tsub">Surcharge and cash discount</span></button>
+    <button class="tab gold active" type="button" role="tab" data-tab="valor"><span class="ttitle">Valor PayTech</span><span class="tsub">Lowest friction</span></button>
+    <button class="tab" type="button" role="tab" data-tab="dejavoo"><span class="ttitle">Dejavoo</span><span class="tsub">Surcharge and cash discount</span></button>
     <button class="tab" type="button" role="tab" data-tab="pax"><span class="ttitle">PAX</span><span class="tsub">+ SwipeSimple</span></button>
     <button class="tab" type="button" role="tab" data-tab="clover"><span class="ttitle">Clover</span><span class="tsub">Operations and POS</span></button>
-    <button class="tab" type="button" role="tab" data-tab="valor"><span class="ttitle">Valor PayTech</span><span class="tsub">Straightforward terminals</span></button>
     <button class="tab" type="button" role="tab" data-tab="cardpointe"><span class="ttitle">CardPointe</span><span class="tsub">Flexible acceptance</span></button>
   </div>
 
@@ -204,7 +211,7 @@ body{background:transparent;font-family:'Inter',sans-serif;color:#1a1a2e;padding
   </div>
 
   <!-- Valor PayTech -->
-  <div class="panel" id="panel-valor" role="tabpanel">
+  <div class="panel show" id="panel-valor" role="tabpanel">
     <p class="eyebrow">Straightforward terminals</p>
     <p class="ptitle">Valor PayTech</p>
     <p class="pbody">Flexible terminal options for straightforward acceptance. Built-in dual pricing and surcharge features can reduce processing costs, and remote setup means no on-site tech visit. Debit cannot legally be surcharged, so these programs lower fees rather than eliminate them.</p>
@@ -223,7 +230,7 @@ body{background:transparent;font-family:'Inter',sans-serif;color:#1a1a2e;padding
   </div>
 
   <!-- Dejavoo -->
-  <div class="panel show" id="panel-dejavoo" role="tabpanel">
+  <div class="panel" id="panel-dejavoo" role="tabpanel">
     <p class="eyebrow">Surcharge and cash discount</p>
     <p class="ptitle">Dejavoo</p>
     <p class="pbody">Simple, reliable terminals for merchants who want surcharging or cash discounting. On-screen PIN entry, an integrated printer on most models and full WiFi/Ethernet/4G connectivity mean there is rarely a reason to hesitate on the device itself.</p>
